@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./index.css" type="text/css" />
+		<title>Fund Me</title>
+	</head>
+	<body>
+		<main class="main-container">
+			<h1>Fund Me App</h1>
+			<div class="buttons">
+				<button id="connect" class="connect">Connect</button>
+				<button id="balance" class="balance">View Balance</button>
+				<button id="withdraw" class="withdraw">Withdraw</button>
+			</div>
+			<form action="/action_page.php">
+				<label for="eth-amount">ETH Amount</label>
+				<br />
+				<input
+					id="eth-amount"
+					placeholder="0.1"
+					type="number"
+					class="eth-input"
+				/>
+				<br /><br />
+				<input type="submit" value="Fund" id="fund" class="fund" />
+			</form>
+		</main>
+
+		<script src="./index.js" type="module"></script>
+	</body>
+</html>
